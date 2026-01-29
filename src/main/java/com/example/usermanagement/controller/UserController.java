@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.usermanagement.entity.User;
 import com.example.usermanagement.service.UserService;
 
-
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -36,7 +35,7 @@ public class UserController {
     }
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id){
-        service.deleteUser(id);
+             service.deleteUser(id);
     }
     
 

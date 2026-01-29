@@ -1,8 +1,10 @@
 package com.example.usermanagement.service;
-import org.springframework.stereotype.Service;
-import com.example.usermanagement.repository.UserRepository;
 import java.util.List;
+
+import org.springframework.stereotype.Service;
+
 import com.example.usermanagement.entity.User;
+import com.example.usermanagement.repository.UserRepository;
 
 @Service
 public class UserService {
@@ -12,10 +14,9 @@ public class UserService {
     public UserService(UserRepository repo) {
         this.repo = repo;
     }
-    public User createUser(User user){
-        return repo.save(user);
-
-    }
+    public User createUser(User user) {
+    return repo.save(user);  // line 18
+}
     public User getUser(Long id){
         return repo.findById(id).orElseThrow();
     }
