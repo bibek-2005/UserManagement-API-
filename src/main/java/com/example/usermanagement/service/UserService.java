@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.usermanagement.entity.User;
 import com.example.usermanagement.repository.UserRepository;
-
+//service class to handle business logic
 @Service
 public class UserService {
 
